@@ -11,7 +11,6 @@ build
 dist
 htmlcov
 application.log
-requirements.txt
 *.egg-info
 **/*.py[cod]
 *.rpm
