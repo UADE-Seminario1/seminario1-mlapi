@@ -1,1 +1,1 @@
-web: gunicorn seminario1_api.wsgi:app
+web: python3 -m seminario1_api.app
