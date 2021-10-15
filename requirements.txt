@@ -112,9 +112,6 @@ itsdangerous==2.0.1; python_version >= "3.6" \
 jinja2==3.0.2; python_version >= "3.6" \
     --hash=sha256:8569982d3f0889eed11dd620c706d39b60c36d6d25843961f33f77fb6bc6b20c \
     --hash=sha256:827a0e32839ab1600d4eb1c4c33ec5a8edfbc5cb42dafa13b81f182f97784b45
-keras-applications==1.0.8 \
-    --hash=sha256:df4323692b8c1174af821bf906f1e442e63fa7589bf0f1230a0b6bdc5a810c95 \
-    --hash=sha256:5579f9a12bcde9748f4a12233925a59b93b73ae6947409ff34aa2ba258189fe5
 keras-preprocessing==1.1.2 \
     --hash=sha256:7b82029b130ff61cc99b55f3bd27427df4838576838c5b2f65940e4fcec99a7b \
     --hash=sha256:add82567c50c8bc648c14195bf544a5ce7c1f76761536956c3d2978970179ef3
@@ -292,15 +289,6 @@ tensorboard==2.7.0; python_version >= "3.6" \
     --hash=sha256:239f78a4a8dff200ce585a030c787773a8c1184d5c159252f5f85bac4e3c3b38
 tensorflow-estimator==2.6.0 \
     --hash=sha256:cf78528998efdb637ac0abaf525c929bf192767544eb24ae20d9266effcf5afd
-tensorflow-gpu==2.6.0 \
-    --hash=sha256:4c6843f2482ef60ebfa5c30b4bbaf03137bac7e51a8b48dcc78b23d3d1ddac0e \
-    --hash=sha256:bdd41566b7b1d1409cd72c4fec84fd193edd1f4cfa474d790c200db0f0df446e \
-    --hash=sha256:97f6c4a0647ec0746a43d9a91b9a56759f825ffde4b73c493792b692c7b6bb06 \
-    --hash=sha256:124ae47017958113595a802f494aca269bf0175c204ec0f6017d6872201a9dd9 \
-    --hash=sha256:80e68a0efba86eea87ea8ec9a1ffd1def48d22db16268af547305bf0ba889746 \
-    --hash=sha256:e22046ce2909c61609e1a233a549e7aad2e433325b0ae179d58ab22d69214160 \
-    --hash=sha256:412b6e2683df7071b65aa2faeac576e4acb33f178963a3001b88c639a6f1f5f5 \
-    --hash=sha256:73913107b44e3829abe2466604f4caa7651b692e77addda94a764c6857d4c1b2
 tensorflow==2.6.0 \
     --hash=sha256:c67fad296a3a2133b7a14da5f06c9937e7911b02c5d7a3ff6ba52a1d79b6bc9e \
     --hash=sha256:8b5ce09ede0fe45ef100f4dc65cf3f46722194e75139f85d524058315e2ce9fa \

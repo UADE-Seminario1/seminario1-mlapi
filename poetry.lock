@@ -255,21 +255,6 @@ optional = false
 python-versions = "*"
 
 [[package]]
-name = "keras-applications"
-version = "1.0.8"
-description = "Reference implementations of popular deep learning models"
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-h5py = "*"
-numpy = ">=1.9.1"
-
-[package.extras]
-tests = ["pytest", "pytest-pep8", "pytest-xdist", "pytest-cov"]
-
-[[package]]
 name = "keras-preprocessing"
 version = "1.1.2"
 description = "Easy data preprocessing and data augmentation for deep learning models"
@@ -563,35 +548,6 @@ optional = false
 python-versions = "*"
 
 [[package]]
-name = "tensorflow-gpu"
-version = "2.6.0"
-description = "TensorFlow is an open source machine learning framework for everyone."
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-absl-py = ">=0.10,<1.0"
-astunparse = ">=1.6.3,<1.7.0"
-clang = ">=5.0,<6.0"
-flatbuffers = ">=1.12.0,<1.13.0"
-gast = "0.4.0"
-google-pasta = ">=0.2,<1.0"
-grpcio = ">=1.37.0,<2.0"
-h5py = ">=3.1.0,<3.2.0"
-keras = ">=2.6,<3.0"
-keras-preprocessing = ">=1.1.2,<1.2.0"
-numpy = ">=1.19.2,<1.20.0"
-opt-einsum = ">=3.3.0,<3.4.0"
-protobuf = ">=3.9.2"
-six = ">=1.15.0,<1.16.0"
-tensorboard = ">=2.6,<3.0"
-tensorflow-estimator = ">=2.6,<3.0"
-termcolor = ">=1.1.0,<1.2.0"
-typing-extensions = ">=3.7.4,<3.8.0"
-wrapt = ">=1.12.1,<1.13.0"
-
-[[package]]
 name = "termcolor"
 version = "1.1.0"
 description = "ANSII Color formatting for output in terminal."
@@ -650,7 +606,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "a3889893de069e65e44caa1f9e2e7d3305e07cc74cd5df895993ff05f3c0786f"
+content-hash = "6e0e541016b57b54a60a751aaf5194dc1461890e18f17144f0bbc09b036c95a6"
 
 [metadata.files]
 absl-py = [
@@ -797,10 +753,6 @@ jinja2 = [
 ]
 keras = [
     {file = "keras-2.6.0-py2.py3-none-any.whl", hash = "sha256:504af5656a9829fe803ce48a8580ef16916e89906aceddad9e098614269437e7"},
-]
-keras-applications = [
-    {file = "Keras_Applications-1.0.8-py3-none-any.whl", hash = "sha256:df4323692b8c1174af821bf906f1e442e63fa7589bf0f1230a0b6bdc5a810c95"},
-    {file = "Keras_Applications-1.0.8.tar.gz", hash = "sha256:5579f9a12bcde9748f4a12233925a59b93b73ae6947409ff34aa2ba258189fe5"},
 ]
 keras-preprocessing = [
     {file = "Keras_Preprocessing-1.1.2-py2.py3-none-any.whl", hash = "sha256:7b82029b130ff61cc99b55f3bd27427df4838576838c5b2f65940e4fcec99a7b"},
@@ -1031,16 +983,6 @@ tensorflow = [
 ]
 tensorflow-estimator = [
     {file = "tensorflow_estimator-2.6.0-py2.py3-none-any.whl", hash = "sha256:cf78528998efdb637ac0abaf525c929bf192767544eb24ae20d9266effcf5afd"},
-]
-tensorflow-gpu = [
-    {file = "tensorflow_gpu-2.6.0-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:4c6843f2482ef60ebfa5c30b4bbaf03137bac7e51a8b48dcc78b23d3d1ddac0e"},
-    {file = "tensorflow_gpu-2.6.0-cp36-cp36m-win_amd64.whl", hash = "sha256:bdd41566b7b1d1409cd72c4fec84fd193edd1f4cfa474d790c200db0f0df446e"},
-    {file = "tensorflow_gpu-2.6.0-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:97f6c4a0647ec0746a43d9a91b9a56759f825ffde4b73c493792b692c7b6bb06"},
-    {file = "tensorflow_gpu-2.6.0-cp37-cp37m-win_amd64.whl", hash = "sha256:124ae47017958113595a802f494aca269bf0175c204ec0f6017d6872201a9dd9"},
-    {file = "tensorflow_gpu-2.6.0-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:80e68a0efba86eea87ea8ec9a1ffd1def48d22db16268af547305bf0ba889746"},
-    {file = "tensorflow_gpu-2.6.0-cp38-cp38-win_amd64.whl", hash = "sha256:e22046ce2909c61609e1a233a549e7aad2e433325b0ae179d58ab22d69214160"},
-    {file = "tensorflow_gpu-2.6.0-cp39-cp39-manylinux2010_x86_64.whl", hash = "sha256:412b6e2683df7071b65aa2faeac576e4acb33f178963a3001b88c639a6f1f5f5"},
-    {file = "tensorflow_gpu-2.6.0-cp39-cp39-win_amd64.whl", hash = "sha256:73913107b44e3829abe2466604f4caa7651b692e77addda94a764c6857d4c1b2"},
 ]
 termcolor = [
     {file = "termcolor-1.1.0.tar.gz", hash = "sha256:1d6d69ce66211143803fbc56652b41d73b4a400a2891d7bf7a1cdf4c02de613b"},
