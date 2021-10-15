@@ -8,7 +8,7 @@ authors = ["Alexander Cabezas <acabezas@inmarket.com>"]
 python = "^3.8"
 Flask = "^2.0.2"
 keras = "^2.6.0"
-tensorflow = "^2.6.0"
+tensorflow-cpu = "^2.6.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

@@ -497,7 +497,7 @@ optional = false
 python-versions = "*"
 
 [[package]]
-name = "tensorflow"
+name = "tensorflow-cpu"
 version = "2.6.0"
 description = "TensorFlow is an open source machine learning framework for everyone."
 category = "main"
@@ -592,7 +592,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "420acbe17e11db945caf9b89c36c36ec82f7f9f9a96c6709174b1315cfa23924"
+content-hash = "538f5b89eedf24bfa090e241b589096fe5759d61f0468a8c7a475d7acc8d500c"
 
 [metadata.files]
 absl-py = [
@@ -949,19 +949,19 @@ tensorboard-data-server = [
 tensorboard-plugin-wit = [
     {file = "tensorboard_plugin_wit-1.8.0-py3-none-any.whl", hash = "sha256:2a80d1c551d741e99b2f197bb915d8a133e24adb8da1732b840041860f91183a"},
 ]
-tensorflow = [
-    {file = "tensorflow-2.6.0-cp36-cp36m-macosx_10_11_x86_64.whl", hash = "sha256:c67fad296a3a2133b7a14da5f06c9937e7911b02c5d7a3ff6ba52a1d79b6bc9e"},
-    {file = "tensorflow-2.6.0-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:8b5ce09ede0fe45ef100f4dc65cf3f46722194e75139f85d524058315e2ce9fa"},
-    {file = "tensorflow-2.6.0-cp36-cp36m-win_amd64.whl", hash = "sha256:dea97f664246e185d79cbe40a86309527affd4232f06afa8a6500c4fc4b64a03"},
-    {file = "tensorflow-2.6.0-cp37-cp37m-macosx_10_11_x86_64.whl", hash = "sha256:4716c9b25a61a2c79b1f253d1e114f1f8679241559c13ad18c657c626a7d5924"},
-    {file = "tensorflow-2.6.0-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:e45e026a9d08c89cecc1160d8248135e2fb79bdc3267328399e1fb25ce583bd6"},
-    {file = "tensorflow-2.6.0-cp37-cp37m-win_amd64.whl", hash = "sha256:6e38b6969414d16afc560c58ca34e1328cc0a5dbd644b64e060f5be8a6653274"},
-    {file = "tensorflow-2.6.0-cp38-cp38-macosx_10_11_x86_64.whl", hash = "sha256:2a067d22a356c2cd4753bdd16ee492c55a610f5ebc52713e2954c642f070321c"},
-    {file = "tensorflow-2.6.0-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:2c9b8c6adc060acfcf805a2ea501db0124b679d95b522fd5983a4c110e8e0264"},
-    {file = "tensorflow-2.6.0-cp38-cp38-win_amd64.whl", hash = "sha256:d6468e05552720100e8f94097feb770de320e4c8c244323a8746bd84e5ba4052"},
-    {file = "tensorflow-2.6.0-cp39-cp39-macosx_10_11_x86_64.whl", hash = "sha256:00b1af0a0c5c102db19caceffac4bd4e6c536e6d7512144c241a4ace4428e7c6"},
-    {file = "tensorflow-2.6.0-cp39-cp39-manylinux2010_x86_64.whl", hash = "sha256:bc73ebdd30c48cfc27ba307271117e6dbb795b37396ed817b2fec9393380b115"},
-    {file = "tensorflow-2.6.0-cp39-cp39-win_amd64.whl", hash = "sha256:bfb255c2b0400bc5b4060dda098d46cd7ddeb53b7cbac1dfa29435612cba828c"},
+tensorflow-cpu = [
+    {file = "tensorflow_cpu-2.6.0-cp36-cp36m-macosx_10_11_x86_64.whl", hash = "sha256:060f6c6b1b3299be0288179f4a5c49f29a332feb1a023d8840246ccd1085a1df"},
+    {file = "tensorflow_cpu-2.6.0-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:74e27b3fa369d39130f25690b45fd792f1b6e771ffa80419677165f6b9b53795"},
+    {file = "tensorflow_cpu-2.6.0-cp36-cp36m-win_amd64.whl", hash = "sha256:d95ef3e9fa34dbee9b9903f52c9e2811e7ad17fd5f4ea108d8b3a5a5ccf3ca04"},
+    {file = "tensorflow_cpu-2.6.0-cp37-cp37m-macosx_10_11_x86_64.whl", hash = "sha256:39d8ecf65ab3f9738be740268cb9645b3fcdf08fd42b591873dfb4d1a953c8ad"},
+    {file = "tensorflow_cpu-2.6.0-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:49572a019358fb0b6ea6a36bcb39d179278e3a88724ae23c7bccc3291d3f0bec"},
+    {file = "tensorflow_cpu-2.6.0-cp37-cp37m-win_amd64.whl", hash = "sha256:4790031201f3c3f626f8218600680353bbed6797353c897b5e59332c804f7e93"},
+    {file = "tensorflow_cpu-2.6.0-cp38-cp38-macosx_10_11_x86_64.whl", hash = "sha256:f88bbedb2b8b67303c80240e76cb72f831e3659c1ebe9276fe530f26ec86929d"},
+    {file = "tensorflow_cpu-2.6.0-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:8322106d9c4d48f8378f6a37aee231415b58c25a7223d96c6e5f1e37f9b129d8"},
+    {file = "tensorflow_cpu-2.6.0-cp38-cp38-win_amd64.whl", hash = "sha256:503eea2b7c3d87d305d4539a9d93115550ba22f4828cc00dee76ecb4057c7c63"},
+    {file = "tensorflow_cpu-2.6.0-cp39-cp39-macosx_10_11_x86_64.whl", hash = "sha256:616fbbe473bb8df58a4060dd062582bec36ae4bb1f516e178ffeed5f92f43cdf"},
+    {file = "tensorflow_cpu-2.6.0-cp39-cp39-manylinux2010_x86_64.whl", hash = "sha256:d2458b6e061151048d89fabf82207eb8a7e0527b64bdd6ac61c5a5d5255d087e"},
+    {file = "tensorflow_cpu-2.6.0-cp39-cp39-win_amd64.whl", hash = "sha256:c65bf8665d26933038eaa1e99f525ff7832f1d99832f1ea9ca2068ef23715b2c"},
 ]
 tensorflow-estimator = [
     {file = "tensorflow_estimator-2.6.0-py2.py3-none-any.whl", hash = "sha256:cf78528998efdb637ac0abaf525c929bf192767544eb24ae20d9266effcf5afd"},
