@@ -24,7 +24,7 @@ def get_health():
     
     info = dict(
         status='OK',
-        model=model.layers[0].input_shape
+        # model=model.layers[0].input_shape
     )
 
     return jsonify(info)
