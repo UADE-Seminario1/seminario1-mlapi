@@ -16,7 +16,7 @@ app = Flask(__name__)
 
 # graph = tf.compat.v1.get_default_graph()
 # with graph.as_default():
-model = keras.models.load_model("trained_recycled_model_h5.h5")
+# model = keras.models.load_model("trained_recycled_model_h5.h5")
 
 
 
@@ -25,7 +25,7 @@ def get_health():
     
     info = dict(
         status='OK',
-        model=model.layers[0].input_shape
+        #model=model.layers[0].input_shape
     )
 
     return jsonify(info)
