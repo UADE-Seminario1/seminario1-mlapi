@@ -1,3 +1,4 @@
+import os
 from flask import Flask, jsonify
 # from flask import (
 #     Blueprint, flash, redirect, render_template, request, url_for, jsonify
@@ -24,12 +25,13 @@ def get_health():
     
     info = dict(
         status='OK',
-        # model=model.layers[0].input_shape
+        model=model.layers[0].input_shape
     )
 
     return jsonify(info)
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=False, port=port)
 
