@@ -13,9 +13,9 @@ app = Flask(__name__)
 # bp = Blueprint('api', __name__)
 #os.path.abspath(os.path.dirname(__name__)) + 
 
-graph = tf.compat.v1.get_default_graph()
-with graph.as_default():
-    model = keras.models.load_model("trained_recycled_model_h5.h5")
+# graph = tf.compat.v1.get_default_graph()
+# with graph.as_default():
+model = keras.models.load_model("trained_recycled_model_h5.h5")
 
 
 
