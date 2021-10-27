@@ -75,7 +75,6 @@ def detect_material():
     with open(filepath, 'wb') as f:
         f.write(base64.b64decode(request.form['b64'])) 
 
-    # BytesIO(base64.b64decode(request.form['b64']))
     img = image.img_to_array(
         image.load_img(filepath, target_size=(IMAGE_WIDTH, IMAGE_WIDTH))
     ) / 255.

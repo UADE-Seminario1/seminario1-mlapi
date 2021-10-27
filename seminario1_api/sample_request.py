@@ -5,6 +5,7 @@ import base64
 import requests
 
 API_ENDPOINT = "http://localhost:5000/predict/"
+API_ENDPOINT = "https://seminario1-api.herokuapp.com/predict/"
 
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True, help="path of the image")
