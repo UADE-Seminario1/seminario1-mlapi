@@ -70,6 +70,8 @@ def detect_material():
     filepath = "/tmp/" + str(int(time.time()))
     print(filepath)
 
+    response = None
+
     try:
 
         with open(filepath, "wb") as f:
@@ -87,12 +89,13 @@ def detect_material():
         preds = preds.argmax(1)
         preds = [LABELS_INV[item] for item in preds]
 
-        remove_file(filepath)
+        response = jsonify(preds)
 
+        remove_file(filepath)
     except Exception as e:
         print(e)
 
-    return jsonify(preds)
+    return response
 
 
 if __name__ == "__main__":
