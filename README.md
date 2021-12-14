@@ -1,6 +1,13 @@
 Requiere Python 3.8 y Poetry para empezar.
 <br/>
 <br/>
+Para inicializar un nuevo ambiente con los paquetes del proyecto, ejecutar:
+<br/>
+<code>
+poetry install
+</code>
+<br/>
+<br/>
 Para instalar nuevos paquetes, ejecutar:
 <br/>
 <code>
