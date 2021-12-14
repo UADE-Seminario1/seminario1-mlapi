@@ -12,7 +12,7 @@ from keras.preprocessing import image
 import time
 
 
-IMAGE_WIDTH = 320    
+IMAGE_WIDTH = 320
 IMAGE_HEIGHT = 320
 LABELS = {
     "battery": 0,
@@ -26,7 +26,7 @@ LABELS = {
     "plastic": 8,
     "shoes": 9,
     "trash": 10,
-    "white-glass": 11
+    "white-glass": 11,
 }
 LABELS_INV = {v: k for k, v in LABELS.items()}
 
@@ -42,49 +42,55 @@ def remove_file(file):
 
 @app.route("/")
 def get_health():
-    testfile = '/tmp/test_file'
+    testfile = "/tmp/test_file"
     info = dict()
     try:
         info = dict(input_shape=model.layers[0].input_shape)
     except:
-        status = 'Bad (1)'
+        status = "Bad (1)"
     else:
-        status = 'Ok'
-    
+        status = "Ok"
+
     try:
-        with open(testfile, 'w') as f:
-            f.write('this is a test')
+        with open(testfile, "w") as f:
+            f.write("this is a test")
     except:
-        status = 'Bad (2)'
+        status = "Bad (2)"
     else:
-        status = 'Ok'
+        status = "Ok"
         remove_file(testfile)
 
-    info = dict(
-        status=status,
-        info=info
-    )
+    info = dict(status=status, info=info)
 
     return jsonify(info)
 
 
-@app.route('/predict/', methods=['POST'])
+@app.route("/predict/", methods=["POST"])
 def detect_material():
-    filepath = '/tmp/' + str(int(time.time()))
+    filepath = "/tmp/" + str(int(time.time()))
     print(filepath)
-    with open(filepath, 'wb') as f:
-        f.write(base64.b64decode(request.form['b64'])) 
 
-    img = image.img_to_array(
-        image.load_img(filepath, target_size=(IMAGE_WIDTH, IMAGE_WIDTH))
-    ) / 255.
-    img = np.expand_dims(img, axis=0)
+    try:
 
-    preds = model.predict(img)
-    preds = preds.argmax(1)
-    preds = [LABELS_INV[item] for item in preds]
+        with open(filepath, "wb") as f:
+            f.write(base64.b64decode(request.form["b64"]))
 
-    remove_file(filepath)
+        img = (
+            image.img_to_array(
+                image.load_img(filepath, target_size=(IMAGE_WIDTH, IMAGE_WIDTH))
+            )
+            / 255.0
+        )
+        img = np.expand_dims(img, axis=0)
+
+        preds = model.predict(img)
+        preds = preds.argmax(1)
+        preds = [LABELS_INV[item] for item in preds]
+
+        remove_file(filepath)
+
+    except Exception as e:
+        print(e)
 
     return jsonify(preds)
 
@@ -92,4 +98,3 @@ def detect_material():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=False)
-
